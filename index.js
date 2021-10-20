@@ -1,7 +1,8 @@
 // TODO: Include packages needed for this application
 const fs = require("fs");
 const inquirer = require("inquirer");
-const generateReadme = require("./utils/generateMarkdown");
+const writeFile = require("./utils/generateMarkdown");
+fs.writeFile('./dist/README.md');
 
     const promptUser = () => {
         return inquirer.prompt([{
